@@ -1,0 +1,12 @@
+html{
+    box-sizing: border-box;
+}
+*, ::after, ::before{
+    box-sizing: inherit;
+}
+
+.container{
+    max-width: 1000px;
+    background-color: rgb(243, 240, 240);
+    
+}
