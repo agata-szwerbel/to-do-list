@@ -5,8 +5,12 @@ html{
     box-sizing: inherit;
 }
 
-.container{
+.body{
     max-width: 1000px;
-    background-color: rgb(243, 240, 240);
-    
+    background-color: rgb(218, 218, 218);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 6%;
+    display:grid;
+    grid-gap:10px;   
 }
