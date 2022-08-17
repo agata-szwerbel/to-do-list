@@ -17,25 +17,40 @@
       rel="stylesheet"
     />
     <script src="js/script.js" defer></script>
-  <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/addNewTask.css" rel="stylesheet" />
+    <link href="css/tasksList.css" rel="stylesheet" />
   </head>
-  <body class="container">
-    <header><h1>Lista zadań</h1></header>
+  <body class="body">
+    <header>
+      <h1>Lista zadań</h1>
+    </header>
 
-    <main>
-      <section>
+    <div class="addNewTask">
+      <div class="addNewTask__header">
         <h2>Dodaj nowe zadanie</h2>
-        <form class="js-form">
-          <input class="js-newTask" name="task" placeholder="Co jest do zrobienia?" autofocus />
-          <button>Dodaj zadanie</button>
+      </div>
+      <div class="addNewTask__input">
+        <form class="js-form form">
+          <input
+            class="js-newTask form__input"
+            name="task"
+            placeholder="Co jest do zrobienia?"
+            autofocus
+          />
+          <button form__button>Dodaj zadanie</button>
         </form>
-      </section>
-      <section>
-        <h2>Lista zadań</h2>
-        <ul class="js-tasks">
+      </div>
+    </div>
 
-        </ul>
-      </section>
-    </main>
+    <div class="tasksList">
+      <div class="tasksList__header">
+        <h2>Lista zadań</h2>
+      </div>
+      <div class="tasksList__unorderedList">
+        <ul class="js-tasks"></ul>
+      </div>
+    </div>
   </body>
 </html>
