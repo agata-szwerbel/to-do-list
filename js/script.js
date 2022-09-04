@@ -1,10 +1,5 @@
 {
-  const tasks = [
-    {
-      content: "nagrać lekcje",
-      done: true,
-    },
-  ];
+  const tasks = [];
 
   const addNewTask = (newTaskContent) => {
     tasks.push({
@@ -31,7 +26,9 @@
         removeTask(index);
       });
     });
+  };
 
+  const bindToggleEvents = () => {
     const toggleDoneButtons = document.querySelectorAll(".js-done");
 
     toggleDoneButtons.forEach((toggleDoneButton, index) => {
@@ -46,16 +43,23 @@
 
     for (const task of tasks) {
       htmlString += `
-            <li ${task.done ? ' style="text-decoration: line-through"' : ""}>
-            <button class="js-done">zrobione?</button>
-            <button class="js-remove">usuń</button>
-            ${task.content}
+            <li class "js-tasks taskList__item"> 
+            <button class="taskList__button  taskList__button--done js-done">
+            ${task.done ? "✔" : ""}
+            </button>
+            <span class="taskList__item${task.done ? " taskList__done" : ""}">
+            ${task.content}</span>
+
+            <button class="js-remove taskList__button taskList__button--delete">🗑</button>
+            
             </li>
             `;
     }
     document.querySelector(".js-tasks").innerHTML = htmlString;
 
     bindEvents();
+    bindToggleEvents();
+
   };
 
   const clearInput = (inputElement) => {
@@ -71,7 +75,7 @@
 
     if (newTaskContent === "") {
       clearInput(inputElement);
-      return; 
+      return;
     }
 
     addNewTask(newTaskContent);
