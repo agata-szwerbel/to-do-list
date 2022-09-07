@@ -3,15 +3,21 @@
     grid-template-columns: 1fr auto;
     gap: 20px;
     padding: 10px;
-   margin: 0px;
+    margin: 0px;
+}
+
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
     }
+}
 
 .form__input {
     padding: 10px;
     cursor: text;
     border: 10px;
     margin: 0px;
-    }
+}
 
 .form__button {
     color: white;
@@ -19,5 +25,3 @@
     border: none;
     padding: 10px;
 }
-
- 

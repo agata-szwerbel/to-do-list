@@ -43,7 +43,7 @@
 
     for (const task of tasks) {
       htmlString += `
-            <li class "js-tasks taskList__item"> 
+            <li class = "js-tasks taskList__item"> 
             <button class="taskList__button taskList__button--done js-done">
             ${task.done ? "✔" : ""}
             </button>
@@ -59,7 +59,6 @@
 
     bindEvents();
     bindToggleEvents();
-
   };
 
   const clearInput = (inputElement) => {
