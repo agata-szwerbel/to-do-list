@@ -1,14 +1,16 @@
 .taskList {
     list-style: none;
-    margin:0;
-    padding: 0;   
+    margin: 0;
+    padding: 0;
 }
 
 .taskList__item {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    border-bottom: 1px solid #ddd;
-    }     
+    border-bottom: 2px solid #eee;
+    grid-gap: 10px;
+    align-items: center;
+}
 
 .taskList__done {
     text-decoration: line-through;
@@ -19,7 +21,9 @@
     height: 30px;
     background-color: white;
     border: none;
-    padding: 0;  
+    padding: 0;
+    margin: 10px;
+    cursor: pointer;
 }
 
 .taskList__button--done {
