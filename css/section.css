@@ -1,9 +1,11 @@
-.section{
+.section {
     background-color: white;
     margin: 0;
 }
-.section__header{
-   padding: 20px;
+
+.section__header {
+    padding: 20px;
     border-bottom: solid 2px;
-    border-bottom-color:#eee ;
+    border-bottom-color: #eee;
+    margin: 0;
 }
