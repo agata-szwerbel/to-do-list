@@ -2,7 +2,7 @@
 list where you can select and delete completed tasks
 
 ## Demo:
-https://agata-szwerbel.github.io/currency-converter/
+https://agata-szwerbel.github.io/to-do-list/
 
 ### Description:
 You can use this application to add a new task to the list and then you can mark whether the task has already been completed. You can also delete the task.
