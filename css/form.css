@@ -18,11 +18,27 @@
     cursor: text;
     border: 10px;
     margin: 0px;
+    border: 1px solid #eee;
 }
 
 .form__button {
     color: white;
     background-color: teal;
+    border: none;
+    padding: 10px;
+    cursor: pointer
+}
+
+.form__button:hover {
+    color: white;
+    background-color: hsl(180, 100%, 30%);
+    border: none;
+    padding: 10px;
+}
+
+.form__button:active {
+    color: white;
+    background-color: hsl(180, 100%, 40%);
     border: none;
     padding: 10px;
 }
